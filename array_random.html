@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var food = [
+        "Apple",
+        "Mango",
+        "banana",
+        "Guava",
+        "Orange",
+        "Pineapple",
+        "Chiku",
+        "DragonFruit",
+        "Papaya",
+        "Grapes",
+      ];
+      
+      function randomInt(min, max) {
+        var NumberOfValues = max - min + 1;
+        var randomNum = Math.random();
+        var randomVal = randomNum * NumberOfValues;
+        var roundedRandomVal = Math.floor(randomVal);
+        var finalNum = min +roundedRandomVal;
+        // console.log(randomVal);
+        // console.log(Math.floor(randomVal));
+        // return randomVal;
+        return finalNum;
+      }
+      console.log(food[randomInt(0,9)]);
+    </script>
+</body>
+</html>
